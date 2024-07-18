@@ -37,3 +37,29 @@ h6 {
 #__next {
 	isolation: isolate;
 }
+
+.grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 0.9fr 1.5fr 1.5fr 1fr;
+	grid-template-rows: 1fr repeat(3, 2fr);
+}
+
+.header {
+	background-color: aqua;
+	grid-column: 2 / -1;
+	grid-row: 1 / 2;
+}
+
+.side-bar {
+	background-color: palevioletred;
+	grid-column: 1 / 2;
+	grid-row: 1 / -1;
+	display: grid;
+}
+
+.main {
+	background-color: limegreen;
+	grid-column: 2 / -1;
+	grid-row: 2 / -1;
+}

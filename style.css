@@ -201,6 +201,15 @@ input:focus {
 	grid-template-rows: 1fr 1fr 1fr;
 	gap: 25px;
 }
+.p-wrapper img {
+	height: 1.5rem;
+	display: inline;
+}
+
+.p-icons {
+	position: absolute;
+	right: 1.5rem;
+}
 
 .p-items {
 	height: 200px;
@@ -208,6 +217,7 @@ input:focus {
 	background-color: white;
 	border-radius: 30px;
 	border-left: 5px solid var(--clr-accent);
+	position: relative;
 }
 
 .announcements-wrapper {

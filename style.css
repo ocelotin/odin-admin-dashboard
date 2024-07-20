@@ -101,6 +101,18 @@ input:focus {
 	height: 1.5rem;
 }
 
+.dot {
+	height: 30px;
+	width: 30px;
+	background-color: var(--clr-accent);
+	border-radius: 50%;
+}
+.usr-greet > span {
+	position: relative;
+	top: 20%;
+	left: 25%;
+}
+
 .user-info {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
@@ -109,14 +121,15 @@ input:focus {
 .user-info .buttons {
 	display: grid;
 	grid-auto-flow: column;
+	align-content: start;
 	padding-top: 15px;
-	gap: 25px;
+	gap: 15px;
 	height: 25px;
 }
 .buttons button {
 	background-color: var(--clr-light);
 	border: 1px solid;
-	border-radius: 20%;
+	border-radius: 10px 25px;
 	padding: 10px 5px;
 }
 .buttons button:hover {
@@ -127,7 +140,7 @@ input:focus {
 	padding-top: 1rem;
 	height: 4rem;
 	display: grid;
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: 1fr 12fr;
 	grid-template-rows: 1fr 1fr;
 }
 .usr-icon {
@@ -157,7 +170,6 @@ input:focus {
 .side-bar img {
 	height: 1.5rem;
 	display: inline;
-	fill: white;
 }
 
 .title {
@@ -174,9 +186,82 @@ input:focus {
 	display: grid;
 	grid-template-columns: 1.5fr 1.5fr 1fr;
 	grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
 }
 
 .projects {
 	grid-column: 1 / 3;
 	grid-row: 1 / -1;
+}
+
+.p-wrapper {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 25px;
+}
+
+.p-items {
+	height: 200px;
+	padding: 1rem;
+	background-color: white;
+	border-radius: 30px;
+	border-left: 5px solid var(--clr-accent);
+}
+
+.announcements-wrapper {
+	margin-top: 15px;
+	height: 300px;
+	background-color: white;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 5%;
+	padding: 2.5rem;
+	border-radius: 25px;
+	box-shadow: 4px 3px 9px -4px var(--clr-accent);
+}
+
+.a-content > p {
+	font-size: 0.9rem;
+	border-bottom: 1px dotted black;
+}
+div.a-content:nth-child(3) > p:nth-child(2) {
+	border: none;
+}
+
+.t-wrapper img {
+	height: 2.5rem;
+	display: inline;
+}
+
+.t-wrapper {
+	margin-top: 15px;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	background-color: white;
+	border-radius: 40px;
+	box-shadow: 4px 3px 9px -4px var(--clr-accent);
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+	height: 75px;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.t-left {
+	padding-left: 25px;
+	align-self: center;
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+}
+
+.t-right {
+	grid-column: 2 / -1;
+	grid-row: 1 / -1;
+	align-self: center;
 }
